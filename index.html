@@ -58,14 +58,16 @@
   .sidebar { width: 296px; flex-shrink: 0; }
   .sidebar-header { display: flex; flex-direction: column; }
   .avatar {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    aspect-ratio: 1;
+    width: 220px;
+    height: 220px;
+    max-width: 100%;
     border-radius: 50%;
     border: 1px solid var(--gh-border);
     margin-bottom: 16px;
+    overflow: hidden;
     object-fit: cover;
+    object-position: 50% 35%;
+    display: block;
   }
   .vcard-names { margin-bottom: 16px; }
   .vcard-fullname { font-size: 24px; font-weight: 600; line-height: 1.25; color: var(--gh-text-main); }
@@ -415,7 +417,7 @@
 <div class="container">
   <aside class="sidebar">
     <div class="sidebar-header">
-      <img src="https://avatars.githubusercontent.com/rajatrsrivastav" alt="Avatar" class="avatar">
+      <img src="https://res.cloudinary.com/dngy2hxmv/image/upload/v1777534396/WhatsApp_Image_2024-09-09_at_14.18.32_ijnar8.jpg" alt="Avatar" class="avatar" style="object-position:50% 35%;">
       <div class="vcard-names">
         <h1 class="vcard-fullname">Rajat Srivastav</h1>
         <h2 class="vcard-username">rajatrsrivastav</h2>
